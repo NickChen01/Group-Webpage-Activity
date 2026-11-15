@@ -119,3 +119,36 @@ button:hover {
 .nick-card button:hover {
     background: #be185d;
 }
+
+.moodboard {
+    margin-top: 15px;
+    padding: 12px;
+    background: #e5ceea;
+    border-radius: 6px;
+    border-left: 4px solid #c084fc;
+}
+
+.moodboard-images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.moodboard-images img {
+    width: 175px;
+    height: 60px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.moodboard-images img:hover {
+    transform: scale(1.15);
+}
+
+.moodboard h4 {
+    margin: 0 0 12px 0;
+    font-size: 0.9rem;
+    color: #7e22ce;
+    font-family: 'Oswald', sans-serif;
+}

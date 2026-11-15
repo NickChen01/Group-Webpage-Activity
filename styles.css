@@ -129,18 +129,13 @@ button:hover {
     border-left: 4px solid #c084fc;
 }
 
-.moodboard-images {
-    display: flex;
-    justify-content: center;
-    gap: 14px;
-    margin-bottom: 10px;
-}
-
 .moodboard-images img {
-    width: 85px;
-    height: 75px;
+    width: 55px;
+    height: 55px;
     object-fit: contain;
     transition: transform 0.2s ease;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px #100e0e;
 }
 
 .moodboard-images img:hover {

@@ -90,3 +90,55 @@ button {
 button:hover {
     background: #0056b3;
 }
+
+/* This fixes the issue of the other cards being extended if you click only on one.*/
+#bios {
+    align-items: flex-start;
+}
+
+/* This is the styling for Christian's card */
+
+/* Christian's card styling */
+.card-christian{
+    background-color: #0d0d0d;
+    background-image: 
+    linear-gradient(rgba(212, 175, 55, 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(212, 175, 55, 0.15) 1px, transparent 1px);
+    background-size: 20px 20px;
+    border: 2px solid #d4af37;
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.5);
+    color: #f5f5f5;
+    transition: transform 0.2s, box-shadow 0.2s ease;
+}
+
+/* Christian's card hover effect */
+.card-christian:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.8);
+}
+
+/* Christian's card heading styling */
+.card-christian h2{
+    color: #d4af37;
+    letter-spacing: 1px;
+}
+
+/* Christian's card paragraph styling */
+.card-christian p{
+    color: #f5f5f5;
+}
+
+/* Christian's card button styling */
+.card-christian button{
+    background: #d4af37;
+    color: #0d0d0d;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Christian's card button hover effect */
+.card-christian button:hover {
+    background: #f5f5f5;
+}
+

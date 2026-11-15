@@ -90,3 +90,8 @@ button {
 button:hover {
     background: #0056b3;
 }
+
+.nick-card {
+    background: linear-gradient (13deg, #ffffff 0%, #f7fcfa 100%);
+    border: 2px solid #00c49f;
+}

@@ -91,6 +91,7 @@ button:hover {
     background: #0056b3;
 }
 
+/* Nick's card styling */
 .nick-card {
     background: linear-gradient (13deg, #ffffff 0%, #faf5ff 100%);
     border: 2px solid #ec4899;
@@ -131,13 +132,13 @@ button:hover {
 .moodboard-images {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 14px;
     margin-bottom: 10px;
 }
 
 .moodboard-images img {
-    width: 175px;
-    height: 60px;
+    width: 85px;
+    height: 75px;
     object-fit: contain;
     transition: transform 0.2s ease;
 }

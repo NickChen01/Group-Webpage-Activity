@@ -14,11 +14,14 @@ header {
     text-align: center;
 }
 
+
 /* Styling for team logo image */
 .team-logo {
-    width: 150px;
-    /* Adjust the size as needed */
-    margin-top: 10px;
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+    margin: 10px auto;
+    display: block;
 }
 
 /* Menu button styling */
@@ -70,6 +73,7 @@ h2 {
     margin: 0 0 10px;
 }
 
+
 /* Initially hide bio details */
 .bio {
     display: none;
@@ -85,6 +89,7 @@ button {
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
+    box-shadow: 5px 5px 8px #100e0e;
 }
 
 button:hover {
@@ -147,4 +152,173 @@ button:hover {
     object-fit: cover;
     border: 2px solid #c5952c;
     border-radius: 8px;
+}
+
+.rachel-card{
+    background: #42387c;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 5px 5px 8px #100e0e;
+}
+
+.rachel-card button{
+    background: #ca72da
+}
+
+.rachel-card button:hover{
+    background: #995aa4;
+}
+
+.profile-img{
+    box-shadow: 2px 2px 4px #151218;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px;
+}
+
+/* Nick's card styling */
+.nick-card {
+    background: linear-gradient(13deg, #ffffff 0%, #faf5ff 100%);
+    border: 2px solid #ec4899;
+}
+
+.member-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ec4899;
+    margin-bottom: 10px;
+}
+
+.nick-card .role-tag {
+    font-size: 0.85rem;
+    color: #9333ea;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.nick-card button {
+    background: #ec4899;
+}
+
+.nick-card button:hover {
+    background: #be185d;
+}
+
+.moodboard {
+    margin-top: 15px;
+    padding: 12px;
+    background: #e5ceea;
+    border-radius: 6px;
+    border-left: 4px solid #c084fc;
+}
+
+.moodboard-images img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px #100e0e;
+}
+
+.moodboard-images img:hover {
+    transform: scale(1.15);
+}
+
+.moodboard h4 {
+    margin: 0 0 12px 0;
+    font-size: 0.9rem;
+    color: #7e22ce;
+    font-family: 'Oswald', sans-serif;
+}
+/* This fixes the issue of the other cards being extended if you click only on one.*/
+#bios {
+    align-items: flex-start;
+}
+
+/* This is the styling for Christian's card */
+
+/* Christian's card styling */
+.card-christian{
+    background-color: #0d0d0d;
+    background-image: 
+    linear-gradient(rgba(212, 175, 55, 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(212, 175, 55, 0.15) 1px, transparent 1px);
+    background-size: 20px 20px;
+    border: 2px solid #d4af37;
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.5);
+    color: #f5f5f5;
+    transition: transform 0.2s, box-shadow 0.2s ease;
+}
+
+/* Christian's card hover effect */
+.card-christian:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.8);
+}
+
+/* Christian's card heading styling */
+.card-christian h2{
+    color: #d4af37;
+    letter-spacing: 1px;
+}
+
+/* Christian's card paragraph styling */
+.card-christian p{
+    color: #f5f5f5;
+}
+
+/* Christian's card button styling */
+.card-christian button{
+    background: #d4af37;
+    color: #0d0d0d;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Christian's card button hover effect */
+.card-christian button:hover {
+    background: #f5f5f5;
+}
+
+/* Christian's card avatar styling */
+.card-christian .card-christian-avatar{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #d4af37;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+    display: block; 
+    margin: 0 auto 10px;
+}
+
+.card-christian .moodboard h4 {
+    margin: 0 0 12px 0;
+    font-size: 0.9rem;
+    color: #d4af37;
+    font-family: 'Oswald', sans-serif;
+}
+
+.card-christian .moodboard-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.card-christian .moodboard-images img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border: 1px solid #d4af37;
+    border-radius: 6px;
+    transition: transform 0.2s ease;
+}
+
+.card-christian .moodboard-images img:hover {
+    transform: scale(1.08);
 }

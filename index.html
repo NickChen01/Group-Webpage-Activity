@@ -11,7 +11,7 @@
 <header>
     <h1>Meet Our Team</h1>
     <!-- Example team logo -->
-    <img src="Rack.png" alt="Team Logo" class="team-logo">
+    <img src="img/Rack.png" alt="Team Logo" class="team-logo">
 
     <!-- Navigation menu to switch between sections -->
     <nav>
@@ -29,11 +29,25 @@
         <button onclick="toggleBio('bio1')">Show Bio</button>
         <p id="bio1" class="bio">John is a skilled frontend developer with 5 years of experience in creating responsive web applications.</p>
     </div>
-    <div class="card">
-        <h2>Jane Smith</h2>
-        <p>Member 2</p>
+    <!-- Christian's card -->
+    <div class="card card-christian">
+        <img src="img/christian-avatar.png" alt="Christian Wallace" class="member-avatar card-christian-avatar">
+        <h2>Christian Wallace</h2>
+        <p class="role-tag">Member 2</p>
         <button onclick="toggleBio('bio2')">Show Bio</button>
-        <p id="bio2" class="bio">Jane is a backend developer specializing in server-side logic and database management.</p>
+        <div id="bio2" class="bio christian-bio">
+            <p>I'm a UNC Charlotte student (obviously) who grew up on video games and got obsessed with how they're made.
+                Now I write code, make art in Blender and Photoshop, and I'm learning to make music. Does any of it work?
+                Sometimes.</p>
+            <div class="moodboard">
+                <h4>Inspiration &amp; Moodboard</h4>
+                <div class="moodboard-images">
+                    <img src="img/aiden_pearce.jpg" alt="Aiden Pearce from Watch Dogs" title="Watch Dogs: Aiden Pearce">
+                    <img src="img/dedsec-art.jpg" alt="DedSec artwork from Watch Dogs 2" title="Watch Dogs 2: DedSec">
+                    <img src="img/watch-dogs-2.jpg" alt="Marcus Holloway from Watch Dogs 2" title="Watch Dogs 2: Marcus Holloway">
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="card rachel-card">
@@ -63,7 +77,13 @@
 <!-- Team vision/mission statement section (hidden by default) -->
 <div id="vision" class="container" style="display: none;">
     <h2>Our Mission Statement</h2>
-    <p>We strive to create a collaborative, inclusive, and innovative environment where team members feel empowered to push boundaries and achieve excellence in their craft. Our mission is to deliver high-quality solutions that meet and exceed our clients' expectations.</p>
+    <p>As a team, we strive to uphold the values of integrity and collaboration. We do this by following a short and simple set
+    of rules and reminders:
+    1: Everyone contributes
+    2: No question is a stupid question
+    3: Communicate Openly
+    As a programming team, you are as strong as your weakest programmer. It is important to us as teammates to uplift each
+    other to achieve our shared goal.</p>
 </div>
 
 <script src="script.js"></script> <!-- Link to external JavaScript file -->

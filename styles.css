@@ -16,9 +16,137 @@ header {
 
 /* Styling for team logo image */
 .team-logo {
-    width: 150px;
+    width: 350px;
     /* Adjust the size as needed */
     margin-top: 10px;
+}
+
+/* Menu button styling */
+header nav {
+    margin-top: 10px;
+}
+
+header nav button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+header nav button:hover {
+    background: #0056b3;
+}
+
+/* Flex container for team bios and vision sections */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Card styling for individual team bios */
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    flex: 1 1 calc(25% - 20px);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    margin: 0 0 10px;
+}
+
+/* Initially hide bio details */
+.bio {
+    display: none;
+    margin-top: 10px;
+    color: white;
+}
+
+/* Button styling */
+button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 5px 5px 8px #100e0e;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.rachel-card{
+    background: #42387c;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 5px 5px 8px #100e0e;
+}
+
+.rachel-card button{
+    background: #ca72da
+}
+
+.rachel-card button:hover{
+    background: #995aa4;
+}
+
+.profile-img{
+    box-shadow: 2px 2px 4px #151218;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px;
+}
+
+.moodboard-images img{
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+    border-radius: 25px;
+    box-shadow: 5px 5px 8px #100e0e;
+}
+
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header section styling */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Styling for team logo image */
+.team-logo {
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+    margin: 10px auto;
+    display: block;
 }
 
 /* Menu button styling */
@@ -147,4 +275,278 @@ button:hover {
     font-size: 0.9rem;
     color: #7e22ce;
     font-family: 'Oswald', sans-serif;
+}
+/* This fixes the issue of the other cards being extended if you click only on one.*/
+#bios {
+    align-items: flex-start;
+}
+
+/* This is the styling for Christian's card */
+
+/* Christian's card styling */
+.card-christian{
+    background-color: #0d0d0d;
+    background-image: 
+    linear-gradient(rgba(212, 175, 55, 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(212, 175, 55, 0.15) 1px, transparent 1px);
+    background-size: 20px 20px;
+    border: 2px solid #d4af37;
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.5);
+    color: #f5f5f5;
+    transition: transform 0.2s, box-shadow 0.2s ease;
+}
+
+/* Christian's card hover effect */
+.card-christian:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.8);
+}
+
+/* Christian's card heading styling */
+.card-christian h2{
+    color: #d4af37;
+    letter-spacing: 1px;
+}
+
+/* Christian's card paragraph styling */
+.card-christian p{
+    color: #f5f5f5;
+}
+
+/* Christian's card button styling */
+.card-christian button{
+    background: #d4af37;
+    color: #0d0d0d;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Christian's card button hover effect */
+.card-christian button:hover {
+    background: #f5f5f5;
+}
+
+/* Christian's card avatar styling */
+.card-christian .card-christian-avatar{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #d4af37;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+    display: block; 
+    margin: 0 auto 10px;
+}
+
+.card-christian .moodboard h4 {
+    margin: 0 0 12px 0;
+    font-size: 0.9rem;
+    color: #d4af37;
+    font-family: 'Oswald', sans-serif;
+}
+
+.card-christian .moodboard-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.card-christian .moodboard-images img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border: 1px solid #d4af37;
+    border-radius: 6px;
+    transition: transform 0.2s ease;
+}
+
+.card-christian .moodboard-images img:hover {
+    transform: scale(1.08);
+
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header section styling */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Styling for team logo image */
+.team-logo {
+    width: 350px;
+    /* Adjust the size as needed */
+    margin-top: 10px;
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+}
+
+/* Menu button styling */
+header nav {
+    margin-top: 10px;
+}
+
+header nav button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+header nav button:hover {
+    background: #0056b3;
+}
+
+/* Flex container for team bios and vision sections */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Card styling for individual team bios */
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    flex: 1 1 calc(25% - 20px);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    margin: 0 0 10px;
+}
+
+/* Initially hide bio details */
+.bio {
+    display: none;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Button styling */
+button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* This fixes the issue of the other cards being extended if you click only on one.*/
+#bios {
+    align-items: flex-start;
+}
+
+/* This is the styling for Christian's card */
+
+/* Christian's card styling */
+.card-christian{
+    background-color: #0d0d0d;
+    background-image: 
+    linear-gradient(rgba(212, 175, 55, 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(212, 175, 55, 0.15) 1px, transparent 1px);
+    background-size: 20px 20px;
+    border: 2px solid #d4af37;
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.5);
+    color: #f5f5f5;
+    transition: transform 0.2s, box-shadow 0.2s ease;
+}
+
+/* Christian's card hover effect */
+.card-christian:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.8);
+}
+
+/* Christian's card heading styling */
+.card-christian h2{
+    color: #d4af37;
+    letter-spacing: 1px;
+}
+
+/* Christian's card paragraph styling */
+.card-christian p{
+    color: #f5f5f5;
+}
+
+/* Christian's card button styling */
+.card-christian button{
+    background: #d4af37;
+    color: #0d0d0d;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Christian's card button hover effect */
+.card-christian button:hover {
+    background: #f5f5f5;
+}
+
+/* Christian's card avatar styling */
+.card-christian .card-christian-avatar{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #d4af37;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+    display: block; 
+    margin: 0 auto 10px;
+}
+
+.card-christian .moodboard h4 {
+    margin: 0 0 12px 0;
+    font-size: 0.9rem;
+    color: #d4af37;
+    font-family: 'Oswald', sans-serif;
+}
+
+.card-christian .moodboard-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.card-christian .moodboard-images img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border: 1px solid #d4af37;
+    border-radius: 6px;
+    transition: transform 0.2s ease;
+}
+
+.card-christian .moodboard-images img:hover {
+    transform: scale(1.08);
 }

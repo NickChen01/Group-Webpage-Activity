@@ -1,3 +1,129 @@
+<<<<<<< HEAD
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header section styling */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Styling for team logo image */
+.team-logo {
+    width: 350px;
+    /* Adjust the size as needed */
+    margin-top: 10px;
+}
+
+/* Menu button styling */
+header nav {
+    margin-top: 10px;
+}
+
+header nav button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+header nav button:hover {
+    background: #0056b3;
+}
+
+/* Flex container for team bios and vision sections */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Card styling for individual team bios */
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    flex: 1 1 calc(25% - 20px);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    margin: 0 0 10px;
+}
+
+/* Initially hide bio details */
+.bio {
+    display: none;
+    margin-top: 10px;
+    color: white;
+}
+
+/* Button styling */
+button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 5px 5px 8px #100e0e;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.rachel-card{
+    background: #42387c;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 5px 5px 8px #100e0e;
+}
+
+.rachel-card button{
+    background: #ca72da
+}
+
+.rachel-card button:hover{
+    background: #995aa4;
+}
+
+.profile-img{
+    box-shadow: 2px 2px 4px #151218;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px;
+}
+
+.moodboard-images img{
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+    border-radius: 25px;
+    box-shadow: 5px 5px 8px #100e0e;
+=======
 
 /* General page styling */
 body {
@@ -367,4 +493,5 @@ button:hover {
 
 .card-christian .moodboard-images img:hover {
     transform: scale(1.08);
+>>>>>>> origin/main
 }
